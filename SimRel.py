@@ -26,13 +26,7 @@ term_counts = TermCounts(godag, annotations)
 
 
 
-
-for go_term in term_counts.gocnts.keys():
-    freq = term_counts.get_term_freq(go_term)
-    print(f"GO Term: {go_term}, Frequency: {freq}")
-
-
-# Load predicted GO terms (696 peptides)
+# Load predicted GO terms (670peptides)
 df_predicted = pd.read_csv("go_terms_DeepFRI.tsv", sep='\t', names=["ProteinID", "Predicted_GO_Terms"], skiprows=1)
 
 
