@@ -18,6 +18,10 @@ Filters out peptides from the test dataset that are highly similar to the traini
 **5. boxplot.py**
 Generates boxplots to visualize the distribution of SimRel scores across GO subontologies, providing a summary of prediction performance.
 
+**6. stat.py** 
+Applies the Mann-Withney U test for comparing outputs from differnt prediction tools and inferring significant differences in performance
+
+
 **Workflow**
 
 **Data Preparation**: Use filtering_DeepFRI_train_val.sh to remove peptides with high similarity to DeepFRI’s training/validation data.
@@ -31,6 +35,8 @@ Generates boxplots to visualize the distribution of SimRel scores across GO subo
 **Visualization**: Use boxplot.py to create graphical summaries of the scoring results.
 
 **Reuse SimRel.py**: score and visualize predictions from other tools for comparative analysis. Mind the formatting of the input file
+
+**Use stat.py**
 
 **Requirements**
 
