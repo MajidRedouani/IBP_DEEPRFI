@@ -19,7 +19,7 @@ Filters out peptides from the test dataset that are highly similar to the traini
 Generates boxplots to visualize the distribution of SimRel scores across GO subontologies, providing a summary of prediction performance.
 
 **6. stat.py** 
-Applies the Mann-Withney U test for comparing outputs from differnt prediction tools and inferring significant differences in performance
+Applies the Mann-Withney U test for comparing outputs from differnt prediction tools and inferring significant differences in performance. It is important to name the input files correctly
 
 
 **Workflow**
@@ -36,7 +36,7 @@ Applies the Mann-Withney U test for comparing outputs from differnt prediction t
 
 **Reuse SimRel.py**: score and visualize predictions from other tools for comparative analysis. Mind the formatting of the input file
 
-**Use stat.py**
+**Use stat.py**: Detect significant differences in perfomance between different function annotation tools
 
 **Requirements**
 
